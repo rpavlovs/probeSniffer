@@ -1,6 +1,6 @@
 #!/bin/bash
 
-iface="wlan1"
+iface=$1
 
 ifconfig $iface down
 iwconfig $iface mode monitor

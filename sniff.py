@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 from scapy.all import *
+import sys
 
-interface = 'wlan1'
+interface = str(sys.argv[1])
 target_addr = '78:31:c1:30:a1:e6'
 
 # Add some colouring for printing packets later
