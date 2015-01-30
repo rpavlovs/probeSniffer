@@ -88,6 +88,8 @@ def main():
 
 	#connect to DB
 	cnx=sqlc.db_connect(host,user,pwd,db)
+	
+	print "Antena " + str(antena_id) + ":"
 
 	sniff(iface=interface, prn=sniffProbes)
 
