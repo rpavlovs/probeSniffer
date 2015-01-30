@@ -20,8 +20,9 @@ def sniffProbes(p):
 		
 		if (channel == 1) :
 			print( GREEN
+				+ time.strftime("%H:%M:%S")					+ '\t'
 				+ 'SRC: ' 				+ str(src)		+ '\t'
-				+ 'Channel: ' 			+ str(channel)	+ '\t'
+				+ 'Channel: ' 				+ str(channel)	+ '\t'
 				+ 'RSSI: ' 				+ str(rssi)		+ '\t'
 				+ 'Seqence number: '	+ str(seq)		+ '\t'
 				+ END )
